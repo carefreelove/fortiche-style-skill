@@ -1,0 +1,108 @@
+/* Original adaptation; no Fortiche fonts, artwork, or production code bundled. */
+.ft {
+  --ft-ink: #141414;
+  --ft-paper: #eceae9;
+  --ft-signal: #ff364a;
+  --ft-mint: #c4fcd4;
+  --ft-pink: #eec0f3;
+  --ft-lavender: #a494f9;
+  --ft-sky: #9bd2fc;
+  --ft-butter: #fff098;
+  --ft-neutral: #ccc1b7;
+  --ft-display: Impact, "Arial Narrow", sans-serif;
+  --ft-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+  --ft-note: "Bradley Hand", "Segoe Print", cursive;
+  --ft-gutter: clamp(1.25rem, 5vw, 7.5rem);
+  color: var(--ft-ink); background: var(--ft-paper);
+  font-family: var(--ft-body); line-height: 1.5; margin: 0;
+}
+.ft *, .ft *::before, .ft *::after { box-sizing: border-box; }
+.ft a { color: inherit; }
+.ft ::selection { color: var(--ft-ink); background: var(--ft-mint); }
+.ft .ft-skip {
+  position: absolute; z-index: 10; top: .75rem; left: .75rem;
+  padding: .75rem 1rem; background: var(--ft-paper); color: var(--ft-ink);
+  transform: translateY(-200%);
+}
+.ft .ft-skip:focus { transform: translateY(0); }
+.ft button { font: inherit; cursor: pointer; }
+.ft :where(a, button, summary):focus-visible { outline: 3px solid currentColor; outline-offset: 5px; }
+.ft :where(img, video, svg) { display: block; max-width: 100%; }
+.ft .ft-section { padding: clamp(4rem, 9vw, 10rem) var(--ft-gutter); }
+.ft .ft-dark { color: var(--ft-paper); background: var(--ft-ink); }
+.ft .ft-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; padding: 1.25rem var(--ft-gutter); border-bottom: 1px solid currentColor;
+}
+.ft .ft-brand { font-weight: 900; letter-spacing: -.045em; text-decoration: none; }
+.ft .ft-label { font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
+.ft .ft-display {
+  font-family: var(--ft-display); font-weight: 900; font-size: clamp(4rem, 12vw, 14rem);
+  line-height: .95; letter-spacing: -.025em; text-transform: uppercase;
+  margin: 0; overflow-wrap: anywhere;
+}
+.ft .ft-display-zh {
+  font-family: var(--ft-body); font-size: clamp(2.6rem, 7vw, 7.5rem);
+  line-height: 1.12; letter-spacing: -.04em; word-break: normal;
+}
+.ft .ft-heading {
+  font-family: var(--ft-display); font-size: clamp(2.5rem, 6vw, 7rem);
+  font-weight: 900; line-height: 1; text-transform: uppercase; margin: 0; overflow-wrap: anywhere;
+}
+.ft .ft-copy { max-width: 42rem; font-size: clamp(1rem, 1.3vw, 1.25rem); line-height: 1.6; }
+.ft .ft-note {
+  display: inline-block; font-family: var(--ft-note); font-size: clamp(1.4rem, 3vw, 2.6rem);
+  line-height: 1.2; transform: rotate(-5deg); margin: 0 0 1rem;
+}
+.ft .ft-note-accent { color: var(--ft-signal); }
+.ft .ft-stage { position: relative; isolation: isolate; overflow: hidden; background: var(--ft-ink); }
+.ft .ft-stage-media { width: 100%; height: clamp(24rem, 65vw, 48rem); object-fit: cover; }
+.ft .ft-stage-caption {
+  position: absolute; inset: auto 0 0; color: var(--ft-paper);
+  padding: 5rem var(--ft-gutter) 2rem;
+  background: linear-gradient(transparent, rgb(0 0 0 / .85));
+}
+.ft .ft-frame {
+  position: absolute; inset: 1rem; border: 2px solid var(--ft-paper);
+  pointer-events: none; transform: rotate(-.6deg); transition: transform 250ms ease;
+}
+.ft .ft-stage:focus-within .ft-frame { transform: rotate(.5deg); }
+.ft .ft-meta {
+  display: flex; flex-wrap: wrap; gap: .5rem 2rem;
+  font-size: .75rem; letter-spacing: .06em; text-transform: uppercase;
+}
+.ft .ft-editorial { display: grid; grid-template-columns: 1.6fr 1fr; gap: 3rem; align-items: end; }
+.ft .ft-editorial > * { min-width: 0; }
+.ft .ft-rule { border: 0; border-top: 1px solid currentColor; margin: 2rem 0; opacity: .4; }
+.ft .ft-tickets { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 3rem; }
+.ft .ft-ticket {
+  display: grid; grid-template-columns: minmax(0, 1fr) 3rem; min-height: 13rem;
+  text-decoration: none; color: var(--ft-ink); background: var(--ft-paper);
+  border: 1px solid var(--ft-ink); transition: background-color 220ms ease, transform 220ms ease;
+}
+.ft .ft-ticket-main { display: flex; flex-direction: column; justify-content: space-between; gap: 2rem; padding: 1.25rem; }
+.ft .ft-ticket-title { font-size: clamp(1.4rem, 2.5vw, 2.5rem); font-weight: 900; line-height: 1.15; overflow-wrap: anywhere; }
+.ft .ft-ticket-stub {
+  display: grid; place-items: center; border-left: 1px dashed currentColor;
+  writing-mode: vertical-rl; font-size: .75rem; letter-spacing: .15em;
+}
+.ft .ft-ticket:focus-visible { background: var(--ft-signal); outline-color: var(--ft-signal); }
+.ft .ft-footer { padding: 2rem var(--ft-gutter); border-top: 1px solid currentColor; }
+@media (hover: hover) and (pointer: fine) {
+  .ft .ft-ticket:hover { background: var(--ft-signal); transform: translateY(-3px); }
+  .ft .ft-stage:hover .ft-frame { transform: rotate(.5deg); }
+}
+@media (max-width: 47.99rem) {
+  .ft .ft-editorial, .ft .ft-tickets { grid-template-columns: 1fr; }
+  .ft .ft-display { font-size: clamp(3rem, 14vw, 7rem); }
+  .ft .ft-display-zh { font-size: clamp(2.6rem, 10vw, 4.5rem); }
+  .ft .ft-stage-media { height: 31rem; }
+  .ft .ft-stage-caption { padding-inline: 1.5rem; }
+  .ft .ft-meta { gap: .4rem 1rem; }
+  .ft .ft-ticket { min-height: 10rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ft *, .ft *::before, .ft *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .ft .ft-frame, .ft .ft-ticket:hover { transform: none; }
+  /* The consuming app must also pause video and JS-driven motion. */
+}

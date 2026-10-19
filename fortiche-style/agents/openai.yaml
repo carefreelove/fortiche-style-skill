@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fortiche 前端风格"
+  short_description: "将电影感影像、巨型窄体排版、手写标注与票券交互用于品牌网站"
+  default_prompt: "使用 $fortiche-style，为我的项目设计并实现具有电影感、大字号与手绘细节的前端界面。"
