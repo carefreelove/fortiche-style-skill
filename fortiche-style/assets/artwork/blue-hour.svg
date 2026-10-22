@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 840" fill="none">
+  <title>蓝色时刻</title>
+  <desc>原创空间研究：圆月、拱门与通向夜空的阶梯。</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="840" gradientUnits="userSpaceOnUse"><stop stop-color="#152337"/><stop offset="1" stop-color="#436685"/></linearGradient>
+    <linearGradient id="arch" x1="810" y1="120" x2="1150" y2="760" gradientUnits="userSpaceOnUse"><stop stop-color="#9bd2fc"/><stop offset="1" stop-color="#527a9c"/></linearGradient>
+    <pattern id="grain" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".65" fill="#eceae9" opacity=".16"/></pattern>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1440v840H0z"/>
+  <circle cx="1000" cy="245" r="155" fill="#fff098"/>
+  <path d="M0 544h1440M0 559h1440" stroke="#9bd2fc" stroke-opacity=".3"/>
+  <path d="M760 840V360a235 235 0 0 1 470 0v480h-100V360a135 135 0 0 0-270 0v480Z" fill="url(#arch)"/>
+  <path d="M860 840V360a135 135 0 0 1 270 0v480Z" fill="#141e2c"/>
+  <path d="M910 840V360a85 85 0 0 1 170 0v480Z" fill="#23384c"/>
+  <path d="M730 840v-56h40v-56h40v-56h40v-56h40v-56h40v-56h40v-56h160v392Z" fill="#9bd2fc"/>
+  <path d="M970 448h160v56H930v56h200v56H890v56h240v56H850v56h280v56H810" stroke="#141414" stroke-opacity=".45" stroke-width="2"/>
+  <path d="m760 360 100-18M1230 360l-100-18M760 840l100-56" stroke="#eceae9" stroke-opacity=".4"/>
+  <path d="M48 56h24M60 44v24M1368 56h24M1380 44v24" stroke="#eceae9" stroke-opacity=".5"/>
+  <circle cx="285" cy="145" r="3" fill="#eceae9"/>
+  <circle cx="385" cy="230" r="2" fill="#eceae9"/>
+  <path fill="url(#grain)" d="M0 0h1440v840H0z"/>
+</svg>

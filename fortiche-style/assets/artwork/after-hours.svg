@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 960" fill="none">
+  <title>夜间轨迹</title>
+  <desc>原创形状研究：珊瑚红、圆盘和交错的椭圆轨迹。</desc>
+  <path fill="#ff364a" d="M0 0h960v960H0z"/>
+  <path d="M32 32h896v896H32z" stroke="#141414" stroke-opacity=".45"/>
+  <circle cx="570" cy="364" r="242" fill="#141414"/>
+  <g transform="rotate(-32 570 364)" stroke="#eceae9">
+    <ellipse cx="570" cy="364" rx="365" ry="82" stroke-width="9"/>
+    <ellipse cx="570" cy="364" rx="401" ry="114" stroke-width="2"/>
+    <ellipse cx="570" cy="364" rx="440" ry="148" stroke-dasharray="3 9" stroke-width="2"/>
+  </g>
+  <path d="m379 215 49-84 90 7 76 112-77 35Z" fill="#ff364a"/>
+  <circle cx="570" cy="364" r="44" fill="#eceae9"/>
+  <path d="M790 706v108M736 760h108" stroke="#141414" stroke-width="2"/>
+  <path d="M55 140h6m4 0h2m7 0h10m5 0h2m4 0h7m7 0h4m5 0h2" stroke="#141414" stroke-width="52"/>
+  <path d="M800 70h80M880 70v80" stroke="#141414" stroke-width="2"/>
+</svg>
