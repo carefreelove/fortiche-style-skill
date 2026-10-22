@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 960" fill="none">
+  <title>纸上信号</title>
+  <desc>原创线条研究：薄荷色纸面、波纹和圆盘。</desc>
+  <path fill="#c4fcd4" d="M0 0h960v960H0z"/>
+  <path d="m610 0 350 180v420L610 420Z" fill="#fff098"/>
+  <g stroke="#141414" stroke-width="3">
+    <path d="M-40 170Q220-30 440 170T960 170"/>
+    <path d="M-40 195Q220-5 440 195T960 195"/>
+    <path d="M-40 220Q220 20 440 220T960 220"/>
+    <path d="M-40 245Q220 45 440 245T960 245"/>
+    <path d="M-40 270Q220 70 440 270T960 270"/>
+    <path d="M-40 295Q220 95 440 295T960 295"/>
+    <path d="M-40 320Q220 120 440 320T960 320"/>
+    <path d="M-40 345Q220 145 440 345T960 345"/>
+    <path d="M-40 370Q220 170 440 370T960 370"/>
+    <path d="M-40 395Q220 195 440 395T960 395"/>
+    <path d="M-40 420Q220 220 440 420T960 420"/>
+    <path d="M-40 445Q220 245 440 445T960 445"/>
+  </g>
+  <circle cx="620" cy="347" r="144" fill="#141414"/>
+  <circle cx="620" cy="347" r="92" stroke="#c4fcd4" stroke-width="2"/>
+  <circle cx="620" cy="347" r="14" fill="#c4fcd4"/>
+  <path d="M48 540h864" stroke="#141414" stroke-width="2"/>
+  <path d="M795 750h65m-33-33v66" stroke="#141414" stroke-width="2"/>
+  <path d="M48 48h24m-12-12v24" stroke="#141414" stroke-width="2"/>
+</svg>

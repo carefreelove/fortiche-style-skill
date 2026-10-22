@@ -3,16 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Fortiche 风格研究的原创构图样本：电影海报式排版、手写旁白、中文标题与票券交互。">
-  <title>Fortiche 风格 · 原创构图样本</title>
+  <meta name="description" content="Fortiche 风格的原创作品集演示：海报式构图、作品筛选、中文排版与票券交互。">
+  <meta name="theme-color" content="#141414">
+  <title>FRAME / 01 · Fortiche 风格作品集</title>
   <link rel="stylesheet" href="fortiche.css">
+  <script src="specimen.js" defer></script>
 </head>
 <body class="ft">
   <a class="ft-skip" href="#main">跳转到主要内容</a>
   <header class="ft-nav">
-    <a class="ft-brand" href="#main">FRAME / 01</a>
-    <a class="ft-label" href="#contact">探索这个风格 ↗</a>
+    <a class="ft-brand" href="#main" aria-label="FRAME / 01 首页">FRAME / 01<span class="ft-brand-caption">独立视觉样本</span></a>
+    <nav class="ft-links" aria-label="主导航">
+      <a href="#work">作品</a>
+      <a href="#type">排版</a>
+      <a href="#contact">资源 ↗</a>
+    </nav>
+    <button class="ft-menu-trigger" type="button" aria-haspopup="dialog" aria-controls="site-menu" aria-expanded="false" hidden>菜单 <span aria-hidden="true">＋</span></button>
   </header>
+  <dialog class="ft-menu" id="site-menu" aria-labelledby="menu-title">
+    <div class="ft-menu-top">
+      <p class="ft-label" id="menu-title">FRAME / 01 — 页面导航</p>
+      <button class="ft-menu-close" type="button" autofocus>关闭 <span aria-hidden="true">×</span></button>
+    </div>
+    <nav aria-label="展开导航">
+      <a href="#work"><span class="ft-label">01 / 作品</span><span lang="en">SELECTED WORK</span><span aria-hidden="true">↗</span></a>
+      <a href="#type"><span class="ft-label">02 / 排版</span><span lang="en">TYPE & SPACE</span><span aria-hidden="true">↗</span></a>
+      <a href="#contact"><span class="ft-label">03 / 资源</span><span lang="en">TAKE A TICKET</span><span aria-hidden="true">↗</span></a>
+    </nav>
+    <p class="ft-label">原创构图 · 中文适配 · 静态优先</p>
+  </dialog>
   <main id="main" tabindex="-1">
     <section class="ft-stage" aria-labelledby="hero-title">
       <svg class="ft-stage-media" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" role="img" aria-label="原创抽象海报：深色背景中，红色圆盘、紫色建筑剪影与纸灰斜线相互交叠">
@@ -27,31 +46,111 @@
       <div class="ft-stage-caption">
         <p class="ft-note">Make a scene!</p>
         <h1 class="ft-display" id="hero-title" lang="en">STORIES<br>IN MOTION.</h1>
-        <p class="ft-meta"><span>01 / 原创风格样本</span><span>影像 · 排版 · 手写注释</span></p>
+        <div class="ft-hero-bottom">
+          <p class="ft-meta"><span>Vol. 01 / 原创风格样本</span><span>构图 · 排版 · 交互</span></p>
+          <a class="ft-hero-link" href="#work">浏览作品 <span aria-hidden="true">↓</span></a>
+        </div>
       </div>
     </section>
-    <section class="ft-section ft-editorial" id="type" aria-labelledby="type-title">
+    <div class="ft-index-strip" aria-hidden="true"><span>视觉研究 / 2026</span><span>三个画面，一套设计语言</span><span>向下探索 ↓</span></div>
+    <section class="ft-section ft-work" id="work" aria-labelledby="work-title" tabindex="-1">
+      <div class="ft-section-top">
+        <div>
+          <p class="ft-label">01 / 原创视觉研究</p>
+          <h2 class="ft-heading" id="work-title" lang="en">SELECTED<br>FRAMES<span class="ft-count">/ 03</span></h2>
+        </div>
+        <p class="ft-section-intro">三组原创 SVG 海报。<br>从画面比例、色彩到文字留白，<br>探索不同的构图方式。</p>
+      </div>
+      <div class="ft-work-toolbar">
+        <div class="ft-filters" role="group" aria-label="筛选作品" hidden>
+          <button type="button" data-filter="all" aria-pressed="true" aria-controls="work-grid">全部 <span>03</span></button>
+          <button type="button" data-filter="poster" aria-pressed="false" aria-controls="work-grid">海报 <span>02</span></button>
+          <button type="button" data-filter="study" aria-pressed="false" aria-controls="work-grid">视觉实验 <span>01</span></button>
+        </div>
+        <p class="ft-label ft-results" id="work-count" role="status" aria-live="polite" aria-atomic="true">显示 3 / 3 组作品</p>
+      </div>
+      <div class="ft-work-grid" id="work-grid">
+        <article class="ft-project ft-project-wide" data-kind="poster">
+          <div class="ft-project-art ft-art-blue">
+            <img src="artwork/blue-hour.svg" width="1440" height="840" loading="lazy" decoding="async" alt="蓝色时刻：深蓝天空、淡黄色圆月与通向拱门的阶梯">
+            <span class="ft-project-number" aria-hidden="true">01 / 03</span>
+            <p class="ft-art-caption" lang="en" aria-hidden="true">BLUE<br>HOUR.</p>
+          </div>
+          <details class="ft-project-details">
+            <summary>
+              <span><span class="ft-label">海报 / 空间与光线</span><span class="ft-project-title">蓝色时刻 <span lang="en">BLUE HOUR</span></span></span>
+              <span class="ft-detail-action">构图说明 <span class="ft-detail-symbol" aria-hidden="true">＋</span></span>
+            </summary>
+            <div class="ft-project-body">
+              <p>以拱门和阶梯建立纵深，圆月作为画面焦点。标题留在左下角的暗部，让文字与主体各有空间。</p>
+              <dl><div><dt>色彩</dt><dd>夜蓝 / 天蓝 / 淡黄</dd></div><div><dt>形式</dt><dd>宽幅海报 · 原创 SVG</dd></div><div><dt>适合</dt><dd>项目首图、专题开场</dd></div></dl>
+            </div>
+          </details>
+        </article>
+        <article class="ft-project" data-kind="poster">
+          <div class="ft-project-art ft-art-red">
+            <img src="artwork/after-hours.svg" width="960" height="960" loading="lazy" decoding="async" alt="夜间轨迹：珊瑚红背景上的黑色圆盘、交错椭圆和细线">
+            <span class="ft-project-number" aria-hidden="true">02 / 03</span>
+            <p class="ft-art-caption" lang="en" aria-hidden="true">AFTER<br>HOURS.</p>
+          </div>
+          <details class="ft-project-details">
+            <summary>
+              <span><span class="ft-label">海报 / 形状与节奏</span><span class="ft-project-title">夜间轨迹 <span lang="en">AFTER HOURS</span></span></span>
+              <span class="ft-detail-action">构图说明 <span class="ft-detail-symbol" aria-hidden="true">＋</span></span>
+            </summary>
+            <div class="ft-project-body">
+              <p>用大面积珊瑚红建立情绪，再以黑色圆盘和偏轴线条组织画面。标题与曲线形成不同方向的张力。</p>
+              <dl><div><dt>色彩</dt><dd>珊瑚红 / 炭黑 / 纸灰</dd></div><div><dt>形式</dt><dd>方形海报 · 原创 SVG</dd></div><div><dt>适合</dt><dd>活动视觉、作品封面</dd></div></dl>
+            </div>
+          </details>
+        </article>
+        <article class="ft-project" data-kind="study">
+          <div class="ft-project-art ft-art-mint">
+            <img src="artwork/paper-signals.svg" width="960" height="960" loading="lazy" decoding="async" alt="纸上信号：薄荷色纸面上的黑色波纹、圆盘和淡黄色矩形">
+            <span class="ft-project-number" aria-hidden="true">03 / 03</span>
+            <p class="ft-art-caption" lang="en" aria-hidden="true">PAPER<br>SIGNALS.</p>
+          </div>
+          <details class="ft-project-details">
+            <summary>
+              <span><span class="ft-label">视觉实验 / 线条与留白</span><span class="ft-project-title">纸上信号 <span lang="en">PAPER SIGNALS</span></span></span>
+              <span class="ft-detail-action">构图说明 <span class="ft-detail-symbol" aria-hidden="true">＋</span></span>
+            </summary>
+            <div class="ft-project-body">
+              <p>让重复线条聚集在画面上半部，底部保留安静的排版区。浅色画面用于调整连续深色章节的阅读节奏。</p>
+              <dl><div><dt>色彩</dt><dd>薄荷绿 / 炭黑 / 淡黄</dd></div><div><dt>形式</dt><dd>图形研究 · 原创 SVG</dd></div><div><dt>适合</dt><dd>品牌章节、编辑式插图</dd></div></dl>
+            </div>
+          </details>
+        </article>
+      </div>
+      <p class="ft-work-footnote">以上均为虚构主题的原创构图样本，不代表真实客户项目。</p>
+    </section>
+    <section class="ft-section ft-editorial" id="type" aria-labelledby="type-title" tabindex="-1">
       <div>
+        <p class="ft-label">02 / 字体与留白</p>
         <p class="ft-note">A little outside the frame.</p>
         <h2 class="ft-display ft-display-zh" id="type-title">让故事<br>冲出画框。</h2>
       </div>
       <div class="ft-copy">
-        <p class="ft-label">独立原创 · 可复用构图样本</p>
+        <p class="ft-label">大标题，小信息</p>
         <p>大幅画面先建立情绪，短标题留下记忆，再用小号文字补充信息。手写批注像创作者留下的一句旁白。</p>
         <hr class="ft-rule">
         <p>这里使用原创 SVG 和系统字体。用于真实项目时，替换为你自己的品牌、影片或摄影。</p>
       </div>
     </section>
-    <section class="ft-section ft-dark" id="contact" aria-labelledby="contact-title">
+    <section class="ft-section ft-dark" id="contact" aria-labelledby="contact-title" tabindex="-1">
+      <p class="ft-label">03 / 带走这套设计语言</p>
       <p class="ft-note">Your next scene ↘</p>
       <h2 class="ft-heading" id="contact-title" lang="en">TAKE YOUR TICKET.</h2>
       <div class="ft-tickets">
-        <a class="ft-ticket" href="#type"><span class="ft-ticket-main"><span class="ft-label">排版 / Typography</span><span class="ft-ticket-title">查看中文<br>排版组合 ↗</span></span><span class="ft-ticket-stub">ADMIT ONE / 01</span></a>
+        <a class="ft-ticket" href="https://github.com/carefreelove/fortiche-style-skill"><span class="ft-ticket-main"><span class="ft-label">仓库 / Repository</span><span class="ft-ticket-title">获取完整<br>项目 ↗</span></span><span class="ft-ticket-stub">ADMIT ONE / 01</span></a>
         <a class="ft-ticket" href="fortiche.css"><span class="ft-ticket-main"><span class="ft-label">样式 / Styles</span><span class="ft-ticket-title">打开可复用<br>CSS ↗</span></span><span class="ft-ticket-stub">ADMIT ONE / 02</span></a>
         <a class="ft-ticket" href="../SKILL.md"><span class="ft-ticket-main"><span class="ft-label">说明 / Skill</span><span class="ft-ticket-title">查看完整<br>Skill 规则 ↗</span></span><span class="ft-ticket-stub">ADMIT ONE / 03</span></a>
       </div>
     </section>
   </main>
-  <footer class="ft-footer ft-meta"><span>Fortiche-inspired / 独立原创样本</span><span>无外部字体、媒体或脚本依赖</span></footer>
+  <footer class="ft-footer">
+    <div class="ft-footer-top"><a class="ft-brand" href="#main">FRAME / 01</a><a href="#main">返回顶部 ↑</a></div>
+    <div class="ft-meta"><span>Fortiche-inspired / 独立原创样本</span><span>原创 SVG · 系统字体 · 原生交互</span></div>
+  </footer>
 </body>
 </html>
