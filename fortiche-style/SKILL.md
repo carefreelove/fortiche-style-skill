@@ -13,7 +13,7 @@ description: 将 Fortiche 官网的电影感影像、超大窄体排版、手写
 2. 实现前阅读 [design-system.md](references/design-system.md)。需要核对官网特征、区分实测与建议时阅读 [source-notes.md](references/source-notes.md)。这些记录足以离线使用；用户要求最新官网或精确复现时再重新调查。
 3. 用一句话确定主视觉、标题层级、主要行动和表达强度。未指定时使用标准强度；保留内容密度与可读性，不能把“更有设计感”理解为增加所有装饰。优先完成一段高质量的“媒体 + 标题 + 元信息”组合，再展开其余内容。
 4. 将 [fortiche.css](assets/fortiche.css) 作为可选样式起点。它是原创、带 `.ft` 作用域的基础样式，不是官网源码。按项目的 CSS、CSS Modules 或 Tailwind 体系转换，不强制替换现有样式系统。
-5. [specimen.html](assets/specimen.html) 是可直接打开的构图样本与 HTML 结构示例。它用原创 SVG 代替影片素材，不代表官网截图或真实品牌内容；正式页面应使用与用户业务相关的媒体。
+5. [specimen.html](assets/specimen.html) 是可直接打开的作品集样本，包含原创 SVG、分类筛选、原生折叠说明和全屏导航。按需复用 [specimen.js](assets/specimen.js) 的渐进增强逻辑；移植组件前阅读 [components.md](references/components.md)。正式页面应使用与用户业务相关的内容和媒体。
 6. 完成功能与浏览器检查，再报告实际修改、运行方式和验证边界。
 
 ## 风格辨识度
